@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rocket Route</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <span>
+              <img alt="Rocket Logo" src="logo.png" >
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="main-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="ICAO" id="user-input" aria-describedby="basic-addon2" maxlength="4">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" id="search" type="button">Go!</button>
+                    </span>
+                </div>
+                <div class="alert alert-danger alert-dismissible fade in hidden" id="invalid-icao" role="alert">
+                  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    Enter a valid ICAO
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div id ="map-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy Tadeush Voichyshyn</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1aK0ThxBN18zhdSAy3WrGxuCdnazxb_Y&callback=initMap" async defer></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
